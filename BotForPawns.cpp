@@ -2,7 +2,7 @@
 #include<stdio.h>
 int a[BS][BS];
 int me;
-
+//Counting the enemies
 int en_count(int me,int i,int j)
 {
 	int count=0;
@@ -79,7 +79,7 @@ int en_count(int me,int i,int j)
 	}
 	return count;
 }
-
+//Calcuating the risk 
 int risk(int me,int i,int j)
 {
 	if(me==1)
@@ -135,7 +135,7 @@ int risk(int me,int i,int j)
 		}
 	}
 }
-
+//Randomly selecting a move
 void random_old()
 {
 	if(me==1)
